@@ -74,7 +74,7 @@ describe 'ApplicationController' do
   #     get '/account'
   #     expect(last_response.body).to include('You Must <a href="/">Log In</a> to View Your Balance')
   #   end
-  # 
+  #
   #   it 'displays the account information if a user is logged in' do
   #     user1 = User.create(:username => "skittles123", :password => "iluvskittles", :balance => 1000)
   #     params = {
@@ -97,7 +97,7 @@ describe 'ApplicationController' do
       get '/logout'
       expect(session[:user_id]).to be(nil)
     end
-    
+
     it 'redirects to \'/\'' do
       get '/logout'
       follow_redirect!
